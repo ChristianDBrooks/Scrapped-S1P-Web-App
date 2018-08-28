@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Quicksand:300,400" rel="stylesheet">    <title></title>
+    <title>S1P Employee Home Page</title>
+    <style media="screen">
+
+      body {
+        font-family: 'Open Sans', sans-serif;
+        background-color: rgb(219, 219, 219);
+      }
+
+      label {
+        color: white;
+        text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+      }
+
+      ul {
+        background-color: rgb(128, 244, 66);
+        margin-bottom: 1rem
+      }
+
+      .nav {
+        background-color: rgb(46, 46, 46);
+        width: 160px;
+        height: 100%;
+        position: fixed;
+      }
+
+      .nav-link {
+        font-family: 'Quicksand', sans-serif;
+        background-color:   rgb(46, 46, 46);
+        font-size: 1.25em;
+        color: white;
+        padding-left: 25px;
+        font-weight: 300;
+      }
+
+      .nav-link:hover {
+        background-color: rgb(49, 255, 100);
+        color: white;
+      }
+
+      .right-side{
+          position: fixed;
+      }
+
+      .main {
+        font-size: 1.2em;
+        margin-left: 160px;
+        padding: 20px 30px 5px 30px;
+        color: white;
+      }
+
+      .table-outline {
+        /* padding: 5px;
+        margin: 10px 0px; */
+      }
+
+      .mytable {
+        margin-left: 190px;
+        padding: 5px;
+        border: 2px solid grey;
+        width: 100px;
+      }
+
+      th, td {
+        padding: 5px;
+        border: 2px solid grey;
+      }
+
+      form {
+        margin: 0px 30px 0px 160px;
+        padding-left: 30px;
+      }
+
+      #item-stnd {
+        font: Arial;
+        margin: 4px 5px;
+        padding: 5px 5px 5px 5px;
+      }
+
+      #addtask {
+        color: white;
+        background-color:rgb(49, 255, 100);
+        border: 2px solid white;
+        padding: 5px 5px;
+
+      }
+
+      #addtask:hover {
+        color:rgb(49, 255, 100);
+        background-color:white;
+        border: 2px solid white;
+        box-shadow: 0px 0px 10px white;
+
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NAV BAR -->
+    <ul class="nav flex-column">
+      <li class="nav-item">
+        <a class="nav-link" style="margin-top: 20px"href="#">Add Repair</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Customer Tasks</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Daily Tasks</a>
+      </li>
+    </ul>
+
+    <div class="right-side">
+        <!-- MAIN BODY -->
+        <div class="container main">
+        <p>From this page you can add a new task to the daily tasks for your store.</p>
+        </div>
+
+        <!-- TO DO LIST -->
+        <div class="table-outline">
+            <table class="mytable col-12">
+
+                <!-- HEADER ROW -->
+                <tr>
+                    <th>Tasks</th>
+                    <th>No.</th>
+                </tr>
+
+                <!-- FIRST ROW -->
+                <tr>
+                    <td>Inventory</td>
+                    <td>1</td>
+                </tr>
+
+            </table>
+        </div>
+
+        <form>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+            <label for="inputCustomerName">Customer Name</label>
+            <input type="text" class="form-control" id="inputCustomerName" placeholder="Customer Name">
+        </div>
+        <button id="addtask" type="submit" class="btn btn-primary">Add Task</button>
+        </form>
+
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <title></title>
+
+    <style media="screen">
+      body {
+        font-family: "Arial";      }
+
+      label {
+        color: white;
+        text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+      }
+
+      ul {
+        background-color: rgb(128, 244, 66);
+        margin-bottom: 1rem
+      }
+
+      .nav {
+        background-color: rgb(128, 244, 66);
+        width: 160px;
+        height: 100%;
+        position: fixed;
+        border-right: 1px solid grey;
+      }
+
+      .nav-link {
+        background-color: rgb(128, 244, 66);
+        font-size: 1.25em;
+        color: white;
+        padding-left: 25px;
+      }
+
+      .nav-link:hover {
+        background-color: rgba(255,255,255,.8);
+        color: rgb(128, 244, 66);
+      }
+
+      .main {
+        font-size: 1.2em;
+        margin-left: 160px;
+        padding: 20px 30px;
+      }
+
+      #item-stnd {
+        font: Arial;
+        margin: 4px 5px;
+        padding: 5px 5px 5px 5px;
+      }
+
+      #btn-item {
+        background-color: rgb(128, 244, 66);
+        font-size: 1em;
+        color: white;
+        margin: 4px 5px;
+        padding: 7px 80px;
+        border: 2px solid white;
+      }
+
+      #btn-item:hover {
+        background-color: white;
+        color: rgb(128, 244, 66);
+        box-shadow: 0px 0px 10px white;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="nav flex-column">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Add Repair</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Customer Tasks</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Daily Tasks</a>
+      </li>
+    </ul>
+
+    <div class="container main">
+      <p>From this page you can add a new task to one of the three store s1p locations. When adding the task, you can set a priority rating for the repair, including the date needed by, if their is an order attached to the repair, and any other necassary info.</p>
+    </div>
+
+  </body>
+</html>
